@@ -34,13 +34,42 @@
     />
 
     <title>Bs4 - DataTable</title>
+
+    <style>
+      .dataTables_wrapper {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        /* align-items: center;
+        justify-items: center; */
+        place-items: center;
+        padding: 2rem;
+      }
+      .dataTables_length {
+        grid-column: 1 / 2;
+        justify-self: start;
+      }
+      .dt-buttons {
+        grid-column: 2 / 4;
+      }
+      .dataTables_filter {
+        grid-column: 4 / 6;
+        justify-self: end;
+      }
+      .dataTable {
+        grid-column: 1 / 6;
+      }
+      .dataTables_info {
+        grid-column: 1 / 2;
+        justify-self: start;
+      }
+      .dataTables_paginate {
+        grid-column: 4 / 6;
+        justify-self: end;
+      }
+    </style>
   </head>
   <body>
-    <table
-      id="dataTable"
-      class="table table-striped table-bordered"
-      style="width: 100%"
-    >
+    <table id="dataTable" class="table table-bordered" style="width: 100%">
       <thead>
         <tr>
           <th>Name</th>
